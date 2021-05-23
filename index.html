@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lush Bathing</title>
+		<meta charset="utf-8">
+
+   		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+   		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700;1,800&display=swap" rel="stylesheet">
+	
+	<style type="text/css">
+		@import url(//db.onlinewebfonts.com/c/2d605a6038ffe9917cbed3ed1212dd71?family=Lush);
+		@font-face {font-family: "Lush"; src: url("//db.onlinewebfonts.com/t/2d605a6038ffe9917cbed3ed1212dd71.eot"); src: url("//db.onlinewebfonts.com/t/2d605a6038ffe9917cbed3ed1212dd71.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2d605a6038ffe9917cbed3ed1212dd71.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2d605a6038ffe9917cbed3ed1212dd71.woff") format("woff"), url("//db.onlinewebfonts.com/t/2d605a6038ffe9917cbed3ed1212dd71.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2d605a6038ffe9917cbed3ed1212dd71.svg#Lush") format("svg"); }
+		html{font-family: 'Noto Sans KR', sans-serif}
+		.LUSH{font-family: "Lush"}
+		.Poppin{font-family: 'Poppins', sans-serif;}
+		body,li,ul,section,p{margin:0;}
+		img,video{display: block; width:100%}
+		nav{background: rgba(0,0,0,0.5); 
+			height: 44px; width:100%; 
+			position: fixed; top:0; z-index: 50; display:flex; overflow: hidden;}
+		nav ul {float:right; width:60%;}
+		nav ul li{list-style-type:none; width:25%; height: 44px; float:left;line-height: 44px;}
+		nav ul li a{text-decoration:none; color:white; font-size:0.8rem;font-weight:700;}
+		nav ul li a:hover{color:#9737f4; font-weight:900; font-size: 0.9rem; transition: all 0.2s;}
+		.navlogo{width:1000px; height: 44px;}
+		.navlogoimg{width:130px; margin-left:50px; padding-top:9px;}
+		.background{position: relative; top:0;}
+		.background_mp4{width:100%; height:auto;}
+		.LUSHBATHING {margin:0; z-index: 30;position: absolute; 
+					width:1200px; height:auto; text-align: center;
+					top:50%; left:50%; transform: translate(-50%, -50%);} 
+		.LUSHBATHING_font{color:white; text-shadow: 1px 1px 2px gray; font-size:7em; margin:0;}
+		.section1{margin-top:200px; height: 900px; position:relative;}
+		.h2{font-size:70px; line-height: 80px; font-weight:900; color:#9737f4; width: 1000px; text-align:center; margin: auto; }
+		.p1{width:930px; margin:70px auto; text-align:center; word-break:keep-all; font-size:1.6rem; font-weight: 500; line-height:1.7; word-spacing:0.8px; letter-spacing: -1px;}
+		.half_HL{background: linear-gradient(0deg, rgba(234,120,62,0.5) 50%, transparent 50%);}
+		.mark1{width:280px; height:280px; position: absolute; top:45%; left:7%; z-index:-10;}
+		.mark2{width:280px; height:280px; position: absolute; top:10%; right:7%; z-index:-10;}
+		.mark-rotate{animation:mark-rotate 15s linear infinite;}
+		@keyframes mark-rotate{
+			0%{transform:rotate(0);}
+			100%{transform:rotate(360deg);}}
+		}
+
+		.bathproduct{margin-left:20px;}
+		.bathproduct_f{font-size:45px; margin: 0px 20px;}
+
+		.bathbomb{margin:0; display:flex; background:#9737f4;}
+		#img{height:600px;}
+		.bathbomb_img{ position:relative; width:992px; height:600px; margin:5px;}
+		.bathbomb_write{width:30%; height:400px; padding:10px; margin:70px auto;}
+		.bathbomb_title{font-size:30px; font-weight:700; color:white; letter-spacing:3px; text-align: center; margin:0;}
+		.bathbomb_p{font-size:1.3rem; line-height:1.5; color:white; font-weight:400; letter-spacing:-1px; width: 335px; margin:60px auto; text-align: justify;}	
+		.bathbomb_shop{display:block; background: none; width:150px; height:50px; margin:170px auto; font-size:1.3rem; font-weight:400; color:white; text-align: center; line-height:50px; text-decoration: none; border:2px solid white;}
+		.bathbomb_shop:hover{ opacity: 0.7; transition:all 0.2;}
+		.bathbombs{margin:30px 25px; display:flex; justify-content: center; height:300px;}
+		.bathbombs_content{ position:relative; margin:20px; width:20%; height:auto; }
+		#absolute{width:230px; height:auto; position: absolute; left: 50%; transform: translateX(-50%);}
+		.bathbombs_info{width:230px; height:auto; position:absolute; left: 50%; transform: translateX(-50%); opacity: 0; transition: opacity 0.7s ;}
+		.bathbombs_info:hover{opacity: 1;}
+
+		.bubblebar{margin:0; display:flex; background:#9737f4;}
+		#img{height:600px;}
+		.bubblebar_img{ position:relative; width:992px; height:600px; margin:5px;}
+		.bubblebar_write{width:30%; height:400px; padding:10px; margin:70px auto;}
+		.bubblebar_title{font-size:30px; font-weight:700; color:white; letter-spacing:3px; text-align: center; margin:0;}
+		.bubblebar_p{font-size:1.3rem; line-height:1.5; color:white; font-weight:400; letter-spacing:-1px; width: 335px; margin:60px auto; text-align: justify;}	
+		.bubblebar_shop{display:block; background: none; width:150px; height:50px; margin:170px auto; font-size:1.3rem; font-weight:400; color:white; text-align: center; line-height:50px; text-decoration: none; border:2px solid white;}
+		.bubblebar_shop:hover{ opacity: 0.7; transition:all 0.2; }
+		.bubblebars{margin:30px 25px; display:flex; justify-content: center; height:450px;}
+		.bubblebars_content{ position:relative; margin:20px; width:20%; height:auto; }
+		#absolute{width:230px; height:auto; position: absolute; left: 50%; transform: translateX(-50%);}
+		.bubblebars_info{width:230px; height:auto; position:absolute; left: 50%; transform: translateX(-50%); opacity: 0; transition: opacity 0.7s ;}
+		.bubblebars_info:hover{opacity: 1;}
+
+		.reservationpage{position:relative;}
+		.reservation_img{position:relative; width: 100%; height: auto; margin:0;}
+		.reservation_h1{position:absolute; margin:0; top:30px; left:30px; font-size: 45px; color:white; letter-spacing: 5px;}
+		.gradient{position:relative; margin:0; background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(63,23,103,1) 80%, rgba(88,32,144,1) 100%); width:100%; height: 1200px;}
+		.about{margin:auto; z-index: 30; position: relative; text-align: center; width: 1200px;}
+		.about_title{position:relative; font-size: 40px; font-weight: 700; color: #9737f4;margin-top:0; margin-bottom:70px; margin-left:0; margin-right:0;}
+		.about_p{position:relative; font-size: 1rem; font-weight:400; color:white; line-height: 2.5;}
+		.about_bathroom{position:relative; margin:0; height:300px; top:150px;}
+		.bathroom_mark{position:absolute; width:250px; height:250px; left:210px;}
+		.bathroom_title{position: absolute; text-align:center; font-size:25px; color: white; width:250px; left:210px; top:60px;}
+		.bathroom_p{ width:700px; position:absolute; left:530px; top:70px;}
+		#p1{font-size:20px; color:white; font-weight:700;}
+		#p2{font-size:13px; color:white; font-weight:400; margin-top:30px;}
+		#p3{font-size:13px; color:white; font-weight:400; margin-top:10px;}
+		.reservation{position:relative; margin:0; height:600px; top:180px;}
+		.reservation_mark{position:absolute; width:250px; height:250px; right:220px; top:50px;}
+		.reservation_title{position: absolute; text-align:center; font-size:25px; color: white; width:250px; right:220px; top:110px;}
+		.store1{position:absolute; width:270px;height:270px;left:280px; top:50px; margin:0;padding:0;border:none; border-radius:3px; background: url(lushstore1.png); background-size:100%;}
+		.store1:hover{background: url(lushstore1-1.png); background-size:100%; transition: 0.3s; cursor: pointer;}
+		.store2{position:absolute; width:270px;height:270px;left:600px; top:50px; margin:0;padding:0;border:none; border-radius:3px; background: url(lushstore2.png); background-size:100%;}
+		.store2:hover{background: url(lushstore2-1.png); background-size:100%;transition: 0.3s; cursor: pointer;} 
+		.store_p{position:relative;left:280px;font-size:13px; color:white; font-weight:400; width:700px;}
+		
+		.labels{display:flex; height:auto; width:100%;background:lightgray;justify-content: center;}
+		.label{width:130px; margin:10px 50px;}
+		footer{background:black; height:600px;}
+		.footer1{width:500px;font-size:14px; font-weight:200; margin: 200px auto;margin-bottom:30px; text-align: center; color:white;}
+		.footer2{width:500px;font-size:12px; font-weight:200; margin:auto;text-align: center; color:white;line-height:1.5;}
+
+
+
+
+
+
+	</style>
+</head>
+
+
+
+<body>
+	<header>
+	<section>
+	  <nav>
+
+	  <div class="navlogo">
+	 	 <img src="logo3.png" class="navlogoimg">
+	 </div>
+
+	  <ul>
+	  	<li>
+	  		<a href="#LUSH BATHING" target="_self">LUSH BATHING</a>
+	  	</li>
+	  	<li>
+	  		<a href="#BATH PRODUCT" target="_self">BATH PRODUCT</a>
+	  	</li>
+	  	<li>
+	  		<a href="#RESERVATION" target="_self">RESERVATION</a>
+	  	</li>
+	  	<li>
+	  		<a href="https://lush.co.kr/main/index.php" target="_new">LUSH KOREA</a>
+	  	</li>
+	  </ul>
+	</nav> 
+	</section>
+
+	<div class="background" id="LUSH BATHING">
+		<video autoplay muted loop class="background_mp4">
+        <source src="background.mp4" type="video/mp4">
+        </video>
+	</div>
+	<div class="LUSHBATHING">
+		<p class="LUSHBATHING_font LUSH">LUSH BATHING</p>
+	</div>
+   </header>
+
+
+    <section class="section1">
+    	<h2 class="h2 Poppin">Enjoy healing yourself<br>with LUSH BATH</h2>
+    	<p class="p1">
+‘Lush Bathing'은 러쉬 코리아에서 이번에 새롭게 런칭한 서비스입니다.<br><span class="half_HL">러쉬의 '배쓰' 카테고리의 제품을 구매하신 분들이 제품을 사용하여 편안한 휴식을 할 수 있도록 개인 배쓰룸을 대여합니다.</span> 배쓰룸에는 러쉬 제품들로 구성된 어메니티가 구비되어있어 다양한 러쉬 제품을 사용해 볼 수 있습니다.<br> 러쉬 배쓰 제품을 구매한 온라인과 오프라인 고객 모두 이용하실 수 있으며, 배쓰룸은 기존 러쉬 스파 트리트먼트 서비스를 진행하는 <span class="half_HL">압구정점</span>과 <span class="half_HL">경리단길점</span>에서 예약하실 수 있습니다.<br><br>러쉬의 배쓰 제품을 통해 몸과 마음에 진정한 힐링 시간을 선사하세요.
+		</p>
+		<div class="mark1">
+			<img src="mark.png" class="mark-rotate">
+		</div>
+		<div class="mark2">
+			<img src="mark.png" class="mark_img mark-rotate">
+		</div>
+	</section>
+
+	<section class="bathproduct" id="BATH PRODUCT">
+	<h1 class="LUSH bathproduct_f">BATH PRODUCT</h1>
+	</section>
+
+	<section class="bathbomb">
+		<div class="bathbomb_img">
+			<img src="bathbomb1.jpg" id="img">
+		</div>
+		<div class="bathbomb_write">
+			<h2 class="bathbomb_title">#배쓰밤</h2>
+			<p class="bathbomb_p">
+				물을 받아 놓은 욕조에 넣으면 보글보글 기포를 내면서 녹으며 환상적인 빛깔이 펼쳐져요. 질 좋은 에센셜 오일이 피부를 촉촉하게 감싸며 향기로움을 선사합니다.
+			</p>
+			<a href="https://lush.co.kr/goods/goods_list.php?cateCd=001001001" target="_new" class="bathbomb_shop">shop</a>
+		</div>
+	</section>	
+
+	<section class="bathbombs">
+		<div class="bathbombs_content">
+			<div id="absolute">
+				<img src="img2.png">
+			</div>
+			<div class="bathbombs_info">
+				<img src="2.png">
+			</div>
+		</div>
+		<div class="bathbombs_content">
+			<div id="absolute">
+				<img src="img1.png">
+			</div>
+			<div class="bathbombs_info">
+				<img src="1.png">
+			</div>
+		</div>
+		<div class="bathbombs_content">
+			<div id="absolute">
+				<img src="img10.png">
+			</div>
+			<div class="bathbombs_info">
+				<img src="10.png">
+			</div>
+		</div>
+		<div class="bathbombs_content">
+			<div id="absolute">
+				<img src="img13.png">
+			</div>
+			<div class="bathbombs_info">
+				<img src="13.png">
+			</div>
+		</div>
+		<div class="bathbombs_content">
+			<div id="absolute">
+				<img src="img12.png">
+			</div>
+			<div class="bathbombs_info">
+				<img src="12.png">
+			</div>
+		</div>
+ 	</section>
+
+ 	<section class="bubblebar">
+		<div class="bubblebar_write">
+			<h2 class="bubblebar_title">#버블바</h2>
+			<p class="bubblebar_p">
+				흐르는 수돗물 아래 놓거나 으깨어 마찰시키면 세정력 있는 거품이 나요. 풍성한 거품과 향기가 욕조를 가득 채워 구름 속에 있는 것 같은 황홀함을 줍니다.
+			</p>
+			<a href="https://lush.co.kr/goods/goods_list.php?cateCd=001001002" target="_new" class="bubblebar_shop">shop</a>
+		</div>
+		<div class="bubblebar_img">
+			<img src="bubblebar2.jpg" id="img">
+		</div>
+	</section>	
+
+	<section class="bubblebars">
+		<div class="bubblebars_content">
+			<div id="absolute">
+				<img src="img19.png">
+			</div>
+			<div class="bubblebars_info">
+				<img src="19.png">
+			</div>
+		</div>
+		<div class="bubblebars_content">
+			<div id="absolute">
+				<img src="img18.png">
+			</div>
+			<div class="bubblebars_info">
+				<img src="18.png">
+			</div>
+		</div>
+		<div class="bubblebars_content">
+			<div id="absolute">
+				<img src="img16.png">
+			</div>
+			<div class="bubblebars_info">
+				<img src="16.png">
+			</div>
+		</div>
+		<div class="bubblebars_content">
+			<div id="absolute">
+				<img src="img17.png">
+			</div>
+			<div class="bubblebars_info">
+				<img src="17.png">
+			</div>
+		</div>
+		<div class="bubblebars_content">
+			<div id="absolute">
+				<img src="img15.png">
+			</div>
+			<div class="bubblebars_info">
+				<img src="15.png">
+			</div>
+		</div>
+	</section>
+	<section class="reservationpage">
+		<div id="RESERVATION">
+			<img src="bath1.png" class="reservation_img">
+			<h1 class="reservation_h1 LUSH">RESERVATION</h1>
+		</div>
+
+		<div class="gradient">
+			<div class="about">
+				<h1 class="about_title">러쉬의 제품으로 향기롭고 편안한 개인 스파를 즐겨보세요</h1>
+				<p class="about_p">Lush Bathing은 집에 욕조가 없어 러쉬 배쓰 제품을 사용하기 힘들었다는 1인 가구의 의견을 반영하여 Z세대를 위해 런칭된 기간제 프로모션입니다. <br>러쉬 배쓰 카테고리 제품을 구매하신 고객님들에 한해 진행되며, 자세한 문의는 02-973-1234로 해주세요.</p>
+			</div>
+			<div class="about_bathroom">
+				<div class="bathroom_mark">
+					<img src="mark2.png" class="mark-rotate">
+				</div>
+				<h1 class="bathroom_title">배쓰룸<br>이용 안내</h1>
+
+				<div class="bathroom_p">
+					<p id="p1">
+					가격: 2h/15000원
+					</p>
+					<p id="p2">
+					기본 요금은 2시간에 15000원 이며, 이후 10분 당 2000원이 추가됩니다.
+					</p>
+					<p id="p3">
+					러쉬의 샴푸, 트리트먼트, 클렌져, 토너, 모이스쳐라이져가 어메니티로 제공되며, 타올 및 헤어드라이어가 구비되어 있습니다.
+					</p>
+
+				</div>
+			</div>
+			<div class="reservation">
+				<div class="reservation_mark">
+					<img src="mark3.png" class="mark-rotate">
+				</div>
+				<h1 class="reservation_title">배쓰룸<br>예약 하기</h1>
+				<button class="store1"></button>
+				<button class="store2"></button>
+				<p class="store_p">
+					원하는 매장을 선택 후, 배쓰밤 제품을 구매하고 받은 코드번호를 입력하여 예약하세요.
+				</p>
+			</div>
+		</div>	
+	</section>
+	</body>
+<footer>
+	<section class="labels">
+			<div class="label"><img src="a.png"></div>
+			<div class="label"><img src="b.png"></div>
+			<div class="label"><img src="c.png"></div>
+			<div class="label"><img src="d.png"></div>
+			<div class="label"><img src="e.png"></div>
+			<div class="label"><img src="f.png"></div>
+	</section>
+	<p class="footer1"> 
+	LUSH BATHING IS IMAGINARY SERVICE
+	</p>
+	<p class="footer2"> 
+		COPYRIGHT &copy; KIM YEONSOO
+	<br>images from LUSH, LUSHKOREA, UNSPLASH
+	</p>
+
+	
+	
+</footer>
+</html>
